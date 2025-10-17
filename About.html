@@ -1,120 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Zizile Gontsana</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Zizile Gontsana</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
     }
 
     body {
-      background-color: #f9fafc;
+      background: #f9fafc;
       color: #1e293b;
-      line-height: 1.8;
-      padding: 4rem 10%;
     }
 
-    .container {
-      max-width: 800px;
+    header {
+      width: 100%;
+      background: #0f172a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #60a5fa;
+    }
+
+    main {
+      padding: 8rem 10% 4rem;
+      max-width: 900px;
       margin: 0 auto;
-      background: #ffffff;
-      padding: 3rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 1.2s ease forwards;
-    }
-
-    h1 {
-      text-align: center;
-      color: #0f172a;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      line-height: 1.8;
     }
 
     h2 {
-      text-align: center;
-      color: #334155;
-      font-size: 1.2rem;
-      font-weight: 500;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #0f172a;
       margin-bottom: 2rem;
+      text-align: center;
     }
 
-    h3 {
-      color: #1e293b;
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h3 {
       font-size: 1.3rem;
+      color: #1e293b;
       margin-bottom: 0.8rem;
-      border-left: 4px solid #2563eb;
-      padding-left: 0.6rem;
     }
 
     p {
-      margin-bottom: 1.8rem;
-      color: #475569;
+      font-size: 1rem;
+      color: #334155;
+      margin-bottom: 1rem;
       text-align: justify;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     footer {
       text-align: center;
-      margin-top: 3rem;
+      padding: 2rem 0;
+      color: #475569;
       font-size: 0.9rem;
-      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+      background: #f8fafc;
     }
 
     @media (max-width: 768px) {
-      body {
-        padding: 2rem 5%;
+      main {
+        padding: 7rem 5%;
       }
 
-      .container {
-        padding: 2rem;
+      nav ul {
+        gap: 1rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <header>
     <h1>Zizile Gontsana</h1>
-    <h2>ICT Graduate | Application Development</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html" style="color: #60a5fa;">About</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section>
+  <main>
+    <h2>About Me</h2>
+
+    <section id="biography">
       <h3>Professional Biography</h3>
       <p>
         I am an enthusiastic and detail-oriented ICT graduate specializing in Application Development. 
-        With a strong foundation in programming, database design, and software engineering, 
-        I am passionate about building user-friendly, functional applications that solve real-world problems. 
-        I am currently expanding my skills in emerging technologies such as AI and cloud development.
+        With a strong foundation in programming, database design, and software engineering, I am passionate 
+        about building user-friendly, functional applications that solve real-world problems. 
+        I am currently expanding my skills in emerging technologies such as Artificial Intelligence (AI) 
+        and cloud development.
       </p>
     </section>
 
-    <section>
+    <section id="objectives">
       <h3>Career Objectives</h3>
       <p>
         A motivated ICT graduate specializing in Application Development, seeking an entry-level position 
-        where I can apply my knowledge of software design, coding, and testing to contribute to 
-        innovative development projects and grow into a full-stack developer.
+        where I can apply my knowledge of software design, coding, and testing to contribute to innovative 
+        development projects and grow into a full-stack developer.
       </p>
     </section>
-  </div>
+  </main>
 
   <footer>
-    <p>© 2025 Zizile Gontsana | About Me</p>
+    <p>© 2025 Zizile Gontsana | Designed with passion and purpose</p>
   </footer>
 
 </body>
