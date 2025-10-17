@@ -1,197 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zizile Gontsana | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
 
-    body {
-      background: #f9fafc;
-      color: #222;
-      overflow-x: hidden;
-    }
-
-    header {
-      width: 100%;
-      background: #0f172a;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 5%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #60a5fa;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 7rem 10%;
-      min-height: 100vh;
-      gap: 2rem;
-    }
-
-    .hero-text {
-      flex: 1;
-      opacity: 0;
-      animation: fadeInLeft 1.5s ease forwards;
-    }
-
-    .hero-text h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: #1e293b;
-    }
-
-    .hero-text h3 {
-      font-size: 1.2rem;
-      color: #475569;
-      margin-top: 0.5rem;
-    }
-
-    .hero-text p {
-      margin: 1rem 0;
-      line-height: 1.6;
-      font-size: 1rem;
-      color: #334155;
-    }
-
-    .hero-text ul {
-      margin-top: 0.5rem;
-      list-style: none;
-    }
-
-    .hero-text li {
-      margin: 0.3rem 0;
-    }
-
-    .hero-cards {
-      margin-top: 1.5rem;
-    }
-
-    .hero-cards a {
-      display: inline-block;
-      margin-right: 1rem;
-      background: #0f172a;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.7rem 1.2rem;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-
-    .hero-cards a:hover {
-      background: #2563eb;
-    }
-
-    .hero-image {
-      flex: 1;
-      text-align: right;
-      opacity: 0;
-      animation: fadeInRight 1.5s ease forwards;
-    }
-
-    .hero-image img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Animations */
-    @keyframes fadeInLeft {
-      from {
-        opacity: 0;
-        transform: translateX(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      color: #475569;
-      font-size: 0.9rem;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    @media (max-width: 900px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 6rem;
-      }
-
-      .hero-text {
-        animation: fadeInLeft 1.5s ease forwards;
-      }
-
-      .hero-image {
-        text-align: center;
-        animation: fadeInRight 1.5s ease forwards;
-      }
-
-      .hero-image img {
-        width: 250px;
-        height: 250px;
-      }
-
-      nav ul {
-        gap: 1rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
   <header>
     <h1>Zizile Gontsana</h1>
     <nav>
@@ -206,6 +13,7 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-text">
       <h2>Hi, I'm Zizile Gontsana</h2>
@@ -223,3 +31,12 @@
       </ul>
 
       <div class="hero-cards">
+        <a href="Zizile_resume.pdf" download>Download Resume</a>
+        <a href="mailto:zizilegontsana@gmail.com">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/profile.jpeg" alt="Profile Image" />
+    </div>
+  </section>
